@@ -6,11 +6,16 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
-  }
+  },
+  {
+    path: 'child',
+    loadChildren: () =>
+      import('../child/child.module').then((m) => m.ChildPageModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class Tab1PageRoutingModule {}

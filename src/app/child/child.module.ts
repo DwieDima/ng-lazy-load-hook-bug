@@ -1,20 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { Tab1Page } from './tab1.page';
+
+import { ChildPageRoutingModule } from './child-routing.module';
 
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { ChildPage } from './child.page';
 
 @NgModule({
   imports: [
-    IonicModule,
     CommonModule,
     FormsModule,
-    Tab1PageRoutingModule,
+    IonicModule,
+    ChildPageRoutingModule,
     LazyLoadImageModule,
   ],
-  declarations: [Tab1Page],
+  declarations: [ChildPage],
 })
-export class Tab1PageModule {}
+export class ChildPageModule {}
