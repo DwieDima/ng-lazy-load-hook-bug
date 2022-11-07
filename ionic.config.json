@@ -1,0 +1,7 @@
+{
+  "name": "ng-lazy-load-hook-bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
